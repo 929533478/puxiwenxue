@@ -1,0 +1,52 @@
+/*搜索样式*/
+header{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+header div+div{
+    width: 24%;     
+    padding-top:40px;
+    text-align: center;
+}
+header .toplogo{
+    width:24%;
+  
+}
+header .toplogo img{
+    width: 80%;
+    height: 100px;
+}
+.time{
+   width: 55%;
+    vertical-align:top;
+    display: inline-block;
+    padding-top: 8px;
+}
+.btn{
+    position: relative;
+    right:6px;
+    width:26%;
+    font-size:1%;
+    height: 2.25rem;
+    background: #3385ff;
+    border: 1px solid #3385ff;
+    color:#fff;
+    border-bottom: 1px solid #2d78f4;
+}
+.btn:hover{
+    background: #317ef3;
+    border-bottom:1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc; 
+}
+.inp{
+    width: 70%;
+    height: 2rem;
+}

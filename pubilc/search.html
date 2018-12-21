@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="toplogo">
+          <img src="./image/logo2.png" alt=""> 
+
+        </div>
+        <div> 
+           <span class="time">周一至周五 | 9:00—22:00</span> 
+        </div>
+        <div class="search">
+               <input class="inp" type="text">
+               <button class="btn">点击搜索</button>
+           
+        </div>
+        <div class="login">
+            <span>注册</span>
+            <span>登录</span>
+        </div>
+        <div class="welcome">
+            欢迎回来<span>xx</span>
+        </div>
+    </header>
+    <script src="./js/jquery-3.3.1.js"></script>
+<script>
+    var searchUrl = window.location.href;
+    console.log(searchUrl)
+    var searchData = searchUrl.split("="); //截取 url中的“=”,获得“=”后面的参数
+    console.log(searchData)
+   var searchText = decodeURI(searchData[1]); //decodeURI解码
+  
+   console.log(searchText)
+   $(".keyword1").text(searchText);
+</script>
+</body>
+</html>

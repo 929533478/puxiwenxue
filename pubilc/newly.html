@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/newly.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./image/logohen.png" alt="">
+        </div>
+        <div class="lists">
+            <div>
+                <a href="">首页</a>
+                <a href="">订阅收藏</a>
+                <a href="">联系我们</a>
+                <a href="">关于我们</a>
+            </div>
+            
+        </div>
+        <div class="search">
+            <div>
+                <input type="text"> <button class="btn">搜索</button>
+            </div>
+            
+        </div>
+        <div class="welcome">
+            <div>
+                欢迎回来 <span>123456</span> <a href="">注销</a> 
+            </div>
+        
+        </div>
+    </header>
+    <main>
+        <div class="carousel">
+            <div>
+                <img src="./image/timg(2).png" alt="">
+            </div>
+            
+        </div>
+        <div class="groom"><!--推荐groom-->
+            <h4>热门搜索</h4>
+            <ul>
+                <li>
+                    <img src="./image/icon/1.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问111111111111111111111111111111111题不只是教育部的问题</a>
+                </li>
+                <li>
+                    <img src="./image/icon/2.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+                 <li>
+                    <img src="./image/icon/3.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+                 <li>
+                    <img src="./image/icon/4.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+                 <li>
+                    <img src="./image/icon/5.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+                 <li>
+                    <img src="./image/icon/6.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+                 <li>
+                    <img src="./image/icon/7.jpg" alt="">        
+                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
+                 </li>
+            </ul>
+        </div>
+        <!--卡片分类-->
+        <div class="y_card">
+            <div class="card_back">
+                <!--图片和标题-->
+                <div class="tit_img">
+                    <span class="tit_img_txt">
+                            时政 <br> 新闻
+                    </span>
+                    <img src="./image/book.png" alt="">
+                </div>
+                <!--推荐列表-->
+                
+                <ul class="boxheading" >
+                        
+                </ul>
+            </div>
+        
+            
+        </div>
+        <div class="y_card">
+                <div class="card_back">
+                        <div class="tit_img">
+                            <span class="tit_img_txt">
+                                    时政 <br> 新闻
+                            </span>
+                            <img src="./image/book.png" alt="">
+                        </div>
+                    </div>
+        </div>
+    </main>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        var res=[
+            {title:"教育问题"},
+            {title:"不只是"},
+            {title:"教育部"},
+            {title:"教育问题"},
+            {title:"不只是"},
+            {title:"教育部"},
+        ]
+        for (var i=0;i<res.length;i++){
+            var index = res[i]
+            $('.boxheading').append(`<li class="clearfix"> <span class="heading"> ${index.title}</span> <a class="more" href="#">更多</a> </li>`)
+        }
+    })
+    </script>
+</body>
+</html>

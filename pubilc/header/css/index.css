@@ -1,0 +1,131 @@
+
+     header{
+        float: right;
+        margin: -8.8rem 3%;
+        text-align: center;
+        width:100px;
+    }
+    header a{
+        color:rgb(49, 49, 49);
+        margin-left: 8px;
+    }
+    .logo{
+        width: 12rem;
+        height: 13rem;
+        margin: 10rem auto 20px auto;
+    }
+    .search{
+        display: flex;
+        margin: 0 auto;
+        width: 38rem;
+
+    }
+    .search input{
+        width: 80%;
+        height:2rem;
+        margin-left: 1.5rem;
+        padding-left:13px;
+        font-size: 15px;
+    }
+    .search .btn{
+        background: #3385ff;
+        position: relative;
+        left: 0px;
+        width: 12%;
+        height: 2.25rem;
+        font-size: 13px;
+        border: 1px solid #3385ff;
+        color:#fff;
+        border-bottom: 1px solid #2d78f4;
+    }
+    .btn:hover{
+        background: #317ef3;
+        border-bottom:1px solid #2868c8;
+        box-shadow: 1px 1px 1px #ccc; 
+    }
+    input::-webkit-input-placeholder{
+        color:rgba(49, 49, 49,0.3);
+        font-size: 12px;
+        padding-left:0px;
+    }
+    input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        color:rgba(49, 49, 49,0.3);
+        font-size: 12px;
+        padding-left:0px;
+    }
+    input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        color:rgba(49, 49, 49,0.3);
+        font-size: 12px;
+        padding-left:0px;
+    }
+    input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        color:rgba(49, 49, 49,0.3);
+        font-size: 12px;
+        padding-left:0px;
+    }
+    footer{
+        position: absolute;
+        top: auto;
+        bottom: 3rem;
+        display:flex;
+        width: 38rem;
+        justify-content: space-between;
+        left: 50%;
+        right: 50%;
+        margin-left: -19rem;
+        margin-right: -19rem;
+       
+    }
+    footer .bot_nav{
+        width: 15%;
+        text-align: center;
+    }
+    footer .bot_nav p{
+        font-size: 12px;
+        color: #000;
+    }
+    .logo img{
+        width: 100%;
+    }
+    @media all and (max-height:580px){
+
+    footer{ 
+        position: relative;
+        top: 70px;
+        }
+    }
+    @media all and (max-width:414px){
+    a{text-decoration:none}
+    .logo{
+        margin-top:6rem;
+    }
+    header{
+        margin-left: 4px;
+        margin: -4.8rem 1px;
+         }
+   .search{
+       width:98%;
+       margin: 28px auto;
+   }
+   
+   .search .btn{
+    width: 18%;
+    top: 0px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 10px;
+   }
+   .search input{
+    width:70%;
+    margin-left:1.5rem;
+    padding-left: 0px;
+    
+   }
+   footer{
+    width:90%; 
+    margin-left: -45%;
+    margin-right: -45%;
+     
+   }
+
+}

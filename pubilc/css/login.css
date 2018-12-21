@@ -1,0 +1,100 @@
+html,body{
+	width:100%;
+	height:100%
+}
+body{
+    font-family: "华文细黑";
+    background:url("../image/bjtu.png") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+.loginbox{
+    width:28rem;
+    height:30rem;
+    background: url("../image/kpjb.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    left: -14rem;
+    right: -14rem;
+    top:20%;
+    text-align: center;
+}
+.head{
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    right: -4rem;
+    left: -4rem;
+    top: -30px;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+}
+.head img{
+    width: 80%;
+}
+.loginbox .cue{
+    padding-top:5rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+.loginbox .cue span{
+    font-size: 10px;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.loginbox .case input{
+    width: 60%;
+    height:1.8rem;
+    padding-left: 10px;
+    margin: 0.8rem auto;
+    background: #F1F3F4;
+    border-radius: 4px;
+}
+.loginbox .case .login_btn{
+    width: 63%;
+    margin:10px 7px 0 0;
+    height: 1.8rem;
+    background:#3385ff;
+    font-size: 13px;
+    border: 1px solid #3385ff;
+    color:#fff;
+    border-radius: 4px;
+    border-bottom: 1px solid #2d78f4;
+}
+.codes{
+    width: 70%;
+    display: none;
+}
+.loginbox .case .codes .code{
+    width: 65%; 
+    margin-right: 5px;
+}
+.numcode{
+    border:1px solid #2d78f4;
+    width: 30%;
+    padding: 5px;
+}
+.party{
+    margin-top: 2.5rem; 
+} 
+.party img{
+    margin:0 10px;
+}
+.loginbox a{
+    margin-top: 21px;
+    width: 30%;
+    display: inline-block;
+}
+@media screen and (max-width:1200px) and (min-width:768px){
+    :root{font-size:15px;}
+}
+@media screen and (max-width:768px) and (min-width:480px){
+    :root{font-size:13px;}
+}
+@media screen and (max-width:480px){
+    :root{font-size:12px;}
+}

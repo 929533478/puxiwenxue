@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>普西学术</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="login">
+           <a href="./login.html">登录</a> <a href="newly.html">注册</a>
+        </div>
+        <div class="welcome">
+                欢迎回来 <br> <span class="sessname"></span> <br>
+                <a  href="javascript:void(0)" id="zhuxiao"> 注销</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="logo">
+            <img src="./image/logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" name="inp" placeholder="请输入搜索的内容" autofocus> 
+            <button class="btn">点击搜索</button>
+        </div>
+    </main>
+
+    <footer>
+         <a href="javascript:void(0)" id="qikan" class="bot_nav">
+            <img src="./image/qikan.png" alt=""> 
+            <p>期刊频道</p>
+         </a>
+         <a href="javascript:void(0)" id="dingyue" class="bot_nav">
+            <img src="./image/shoucang.png" alt=""> 
+            <p>订阅收藏</p>
+        </a>
+        <a href="javascript:void(0)" id="guanyu" class="bot_nav">
+             <img src="./image/guanyu.png" alt=""> 
+             <p>关于我们</p>
+        </a>
+         <a href="javascript:void(0)" id="lianxi" class="bot_nav">
+            <img src="./image/lianxi.png" alt=""> 
+            <p>联系我们</p>
+        </a>
+        <!-- <a href="javascript:void(0)" id="lianxi" onclick="window.open('http://www.baidu.com','_self');" target="_blank" class="bot_nav">
+            <img src="./image/lianxi.png" alt=""> 
+            <p>联系我们</p>
+        </a>-->
+    </footer>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+        /*判断用户是否登录*/
+        $(document).ready(function(){
+            var uname = sessionStorage.getItem('uname') 
+            if(uname){
+                $('.sessname').html(uname)
+                $(".welcome").addClass("block")
+                $(".login").addClass("none");
+                console.log(123)
+            }else{
+
+                $(".welcome").addClass("none")
+                $(".login").addClass("block");
+             
+               
+            }
+        })
+        /*退出登录*/
+        $('#zhuxiao').click(function(){
+         
+            var shifou= confirm("确认退出登录")
+            if(shifou){
+                sessionStorage.clear();
+                window.location.reload()
+            }
+            
+        })
+       function search(){
+            var searchText=$("input[name='inp']").val()
+            console.log(searchText)
+            if(searchText.length==0){
+                alert("输入的内容不能为空");
+                return;
+            }
+            var searchUrl = encodeURI("search.html?searchText=" + searchText); //使用encodeURI编码
+            location.href = searchUrl;
+        }
+        /*鼠标点击*/
+        $(".btn").click(function(){
+            search()
+        }
+            
+        )
+        /*键盘事件*/
+        $(document).keyup(function(event){
+        if(event.keyCode ==13){
+            search()
+        }
+        /*判断session是否存在 切换登录和欢迎*/
+        
+        });
+        function jianceuname(){
+            if(sessionStorage.getItem('uname')){
+
+                $(location).prop('href', 'search.html')
+                console.log(123)
+            }else{
+                alert("请登录")
+            }
+        }
+        $("#qikan").click(function(){
+            jianceuname();
+        })
+        $("#dingyue").click(function(){
+            jianceuname();
+        })
+        $("#guanyu").click(function(){
+            jianceuname();
+        })
+        $("#lianxi").click(function(){
+            jianceuname();
+        })
+
+    </script>
+</body>
+</html>
