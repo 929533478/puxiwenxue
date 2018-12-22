@@ -85,8 +85,8 @@ main .carousel,.groom{
 .y_card{
     width:49%;
     height: 23rem;
-    border: 1px solid red;
     
+    margin: 2.1rem -5.3rem 1.6rem -5.3rem;
 }
 .y_card .card_back{
     width:31rem;
@@ -94,13 +94,14 @@ main .carousel,.groom{
     background: #fff;
     border-radius: 5px;
     margin:0 auto;
-    border: 1px solid blue;
+    
     -moz-box-shadow:2px 2px 19px #333333;
      -webkit-box-shadow:2px 2px 19px #333333; 
      box-shadow:2px 2px 19px #333333;
 }
 .card_back .tit_img{
     height: 123px;
+    padding-top: 1rem;
 }
 .card_back .tit_img .tit_img_txt{
     position: relative;
@@ -129,7 +130,7 @@ main .carousel,.groom{
 .boxheading li{
     border-bottom:1px dashed #BCC4D1;
     display:block;
-    margin: 0 0.8rem 1rem 0.8rem;
+    margin: 10px 26px 10px 20px;
 }
 /*父元素塌陷*/
 .clearfix:after,

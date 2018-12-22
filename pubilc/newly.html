@@ -98,11 +98,46 @@
                 <div class="card_back">
                         <div class="tit_img">
                             <span class="tit_img_txt">
+                                    经济 <br> 法律
+                            </span>
+                            <img src="./image/jingji.png" alt="">
+                        </div>
+                        <!--推荐列表-->
+                     <ul class="boxheading" >
+                        
+                      </ul>
+
+                </div>
+        </div>
+        <div class="y_card">
+                <div class="card_back">
+                        <div class="tit_img">
+                            <span class="tit_img_txt">
                                     时政 <br> 新闻
                             </span>
                             <img src="./image/book.png" alt="">
                         </div>
-                    </div>
+                        <!--推荐列表-->
+                     <ul class="boxheading" >
+                        
+                      </ul>
+
+                </div>
+        </div>
+        <div class="y_card">
+                <div class="card_back">
+                        <div class="tit_img">
+                            <span class="tit_img_txt">
+                                    时政 <br> 新闻
+                            </span>
+                            <img src="./image/book.png" alt="">
+                        </div>
+                        <!--推荐列表-->
+                     <ul class="boxheading" >
+                        
+                      </ul>
+
+                </div>
         </div>
     </main>
     <script src="./js/jquery-3.3.1.js"></script>
@@ -118,7 +153,7 @@
         ]
         for (var i=0;i<res.length;i++){
             var index = res[i]
-            $('.boxheading').append(`<li class="clearfix"> <span class="heading"> ${index.title}</span> <a class="more" href="#">更多</a> </li>`)
+            $('.boxheading').append(`<li class="clearfix"> <a href="#" class="heading"> ${index.title}</a> <a class="more" href="#">更多</a> </li>`)
         }
     })
     </script>
