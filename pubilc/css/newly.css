@@ -1,5 +1,7 @@
 
-
+body{
+    background: #6BA4BC;
+}
 header{
   display: flex;
   width: 80%;
@@ -106,15 +108,15 @@ main .carousel,.groom{
 .card_back .tit_img .tit_img_txt{
     position: relative;
     left: 1rem;
-    bottom:2.8rem;
+    bottom:0.5rem;
     display: inline-block;
     width: 6rem;
-    height: 5rem;
+    height: 6rem;
     background: #6BA4BC;
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
-    padding-top: 1rem;
+   
 }
 .card_back .tit_img img{
     width: 23rem;
@@ -142,7 +144,17 @@ main .carousel,.groom{
 {
     clear:both;
 }
-
+.plate{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top:-25px;
+    
+    display: inline-block;
+} 
 
 
 @media screen and (max-width:1200px) and (min-width:768px){

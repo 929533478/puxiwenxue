@@ -44,117 +44,94 @@
         </div>
         <div class="groom"><!--推荐groom-->
             <h4>热门搜索</h4>
-            <ul>
-                <li>
-                    <img src="./image/icon/1.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问111111111111111111111111111111111题不只是教育部的问题</a>
-                </li>
-                <li>
-                    <img src="./image/icon/2.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
-                 <li>
-                    <img src="./image/icon/3.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
-                 <li>
-                    <img src="./image/icon/4.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
-                 <li>
-                    <img src="./image/icon/5.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
-                 <li>
-                    <img src="./image/icon/6.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
-                 <li>
-                    <img src="./image/icon/7.jpg" alt="">        
-                    <a href="#" class="lititle">[教育论文]教育问题不只是教育部的问题</a>
-                 </li>
+            <ul id="hot_groom"> <!--热门推荐-->
+                
             </ul>
         </div>
         <!--卡片分类-->
+      <!--- 
+        
+        
         <div class="y_card">
-            <div class="card_back">
+                <div class="card_back">
+                        <div class="tit_img">
+                            <span class="tit_img_txt">
+                                    时政 <br> 新闻
+                            </span>
+                            <img src="./image/book.png" alt="">
+                        </div>
+                     <ul class="boxheading" >
+                        
+                      </ul>
+
+        </div>
+        --->
+        </div>
+    </main>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+       
+        var hot_groom=[
+            {title:'[教育论文]教育问111111111111111111111111111111111题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+            {title:'[教育论文]教育问题不只是教育部的问题'},
+        ]
+        for (var i=0;i<hot_groom.length;i++){
+            var index = hot_groom[i]
+            $('#hot_groom').append(`<li><img src="./image/icon/${i+1}.jpg" alt=""> <a href="#" class="lititle"> ${index.title} </a></li>`)
+        }
+        var res=[
+            {title:"教育问题"},
+            {title:"不只是"},
+            {title:"教育部的问题"},
+            {title:"教育"},
+            {title:"不只是"},
+            {title:"教育部"},
+        ]
+        var plate = [
+                     {title:'时政新闻'},
+                     {title:'经济法律'},
+                     {title:'管理财经'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                     {title:'时政新闻'},
+                    ]
+        
+        for (var i=0;i<plate.length;i++){ 
+            var index = plate[i];
+            
+
+            $('.groom').after(`<div  class="y_card"><div class="card_back">
                 <!--图片和标题-->
                 <div class="tit_img">
                     <span class="tit_img_txt">
-                            时政 <br> 新闻
+                            <div class="plate">${index.title}</div>
                     </span>
                     <img src="./image/book.png" alt="">
                 </div>
                 <!--推荐列表-->
                 
                 <ul class="boxheading" >
-                        
+                  
                 </ul>
-            </div>
-        
-            
-        </div>
-        <div class="y_card">
-                <div class="card_back">
-                        <div class="tit_img">
-                            <span class="tit_img_txt">
-                                    经济 <br> 法律
-                            </span>
-                            <img src="./image/jingji.png" alt="">
-                        </div>
-                        <!--推荐列表-->
-                     <ul class="boxheading" >
-                        
-                      </ul>
-
-                </div>
-        </div>
-        <div class="y_card">
-                <div class="card_back">
-                        <div class="tit_img">
-                            <span class="tit_img_txt">
-                                    时政 <br> 新闻
-                            </span>
-                            <img src="./image/book.png" alt="">
-                        </div>
-                        <!--推荐列表-->
-                     <ul class="boxheading" >
-                        
-                      </ul>
-
-                </div>
-        </div>
-        <div class="y_card">
-                <div class="card_back">
-                        <div class="tit_img">
-                            <span class="tit_img_txt">
-                                    时政 <br> 新闻
-                            </span>
-                            <img src="./image/book.png" alt="">
-                        </div>
-                        <!--推荐列表-->
-                     <ul class="boxheading" >
-                        
-                      </ul>
-
-                </div>
-        </div>
-    </main>
-    <script src="./js/jquery-3.3.1.js"></script>
-    <script>
-    $(document).ready(function(){
-        var res=[
-            {title:"教育问题"},
-            {title:"不只是"},
-            {title:"教育部"},
-            {title:"教育问题"},
-            {title:"不只是"},
-            {title:"教育部"},
-        ]
-        for (var i=0;i<res.length;i++){
-            var index = res[i]
-            $('.boxheading').append(`<li class="clearfix"> <a href="#" class="heading"> ${index.title}</a> <a class="more" href="#">更多</a> </li>`)
+            </div> </div>`)
         }
+        for (var j=1;j<res.length;j++){
+            var genduo = res[j]
+             var num=`<li class="clearfix"> <a href="#" class="heading"> ${genduo.title}</a> <a class="more" href="#">更多</a> </li>`
+               console.log(num)
+               $('.boxheading').append(num)
+            } 
+
     })
     </script>
 </body>
